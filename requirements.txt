@@ -6,3 +6,7 @@ pytest==8.2.2
 
 # API
 Flask==3.0.3
+
+# Analytics
+pandas==2.2.2
+matplotlib==3.9.0
