@@ -59,3 +59,18 @@ The REST API is available at `http://localhost:5000/api/v1/leads`.
   { "stage": "Contacted" }
   ```
 - `DELETE /api/v1/leads/<id>`: Delete a lead
+
+## WP-04: Automated Tests
+
+To run the test suite:
+```bash
+pytest -v tests/
+```
+
+## WP-05 & WP-06: Analytics & Operations Dashboard
+
+To view the internal operations dashboard (which includes funnel analytics, source conversions, and recent leads):
+```bash
+streamlit run src/dashboard.py
+```
+This will open the dashboard in your default web browser.
