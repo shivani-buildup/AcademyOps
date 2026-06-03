@@ -53,10 +53,25 @@ class LeadRepository:
                 
             return self._row_to_lead(row)
 
-    def list(self) -> List[Lead]:
+    def list(self, stage: Optional[str] = None, source: Optional[str] = None, limit: int = 100, offset: int = 0) -> List[Lead]:
         with self._get_connection() as conn:
             cursor = conn.cursor()
-            cursor.execute("SELECT * FROM leads ORDER BY created_at DESC")
+            
+            query = "SELECT * FROM leads WHERE 1=1"
+            params = []
+            
+            if stage:
+                query += " AND stage = ?"
+                params.append(stage)
+                
+            if source:
+                query += " AND source = ?"
+                params.append(source)
+                
+            query += " ORDER BY created_at DESC LIMIT ? OFFSET ?"
+            params.extend([limit, offset])
+            
+            cursor.execute(query, tuple(params))
             rows = cursor.fetchall()
             return [self._row_to_lead(row) for row in rows]
 

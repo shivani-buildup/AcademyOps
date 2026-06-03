@@ -3,3 +3,6 @@
 
 # Testing and Quality
 pytest==8.2.2
+
+# API
+Flask==3.0.3

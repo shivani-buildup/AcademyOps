@@ -33,4 +33,29 @@ AcademyOps is a Lead-to-Enrollment Management System built for the EasySkill Car
 
 ## How to Run
 
-*Currently in initial setup phase. Running instructions will be added as modules are developed.*
+1. Initialize the database:
+   ```bash
+   python -m src.cli initdb
+   ```
+2. Start the API server:
+   ```bash
+   python -m src.api
+   ```
+
+## API Reference
+
+The REST API is available at `http://localhost:5000/api/v1/leads`.
+
+### Endpoints
+
+- `GET /api/v1/leads`: List leads (Supports `?stage=New&source=Website&page=1&limit=20`)
+- `GET /api/v1/leads/<id>`: Retrieve a specific lead
+- `POST /api/v1/leads`: Create a new lead
+  ```json
+  { "name": "John Doe", "phone": "555-1234", "source": "Website", "notes": "Interested" }
+  ```
+- `PATCH /api/v1/leads/<id>/stage`: Update a lead's stage
+  ```json
+  { "stage": "Contacted" }
+  ```
+- `DELETE /api/v1/leads/<id>`: Delete a lead
