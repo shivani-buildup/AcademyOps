@@ -1,0 +1,348 @@
+2026-06-03 12:37:54,873 - src.db_init - INFO - Initializing database at data/academyops.db
+2026-06-03 12:37:54,907 - src.db_init - INFO - Database schema initialized successfully.
+2026-06-03 12:37:55,045 - src.repository - INFO - Created lead 1 with phone 555-0100
+2026-06-03 12:37:55,241 - src.repository - INFO - Created lead 2 with phone 555-0101
+2026-06-03 12:38:11,537 - src.repository - INFO - Updated lead 1 stage to Contacted
+2026-06-03 12:38:11,662 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:38:11,663 - __main__ - ERROR - Lead with phone 555-0100 already exists.
+2026-06-03 12:38:11,776 - __main__ - ERROR - Invalid stage: InvalidStage
+2026-06-03 12:41:14,317 - src.repository - WARNING - Failed to delete: Lead 999 not found.
+2026-06-03 12:41:14,317 - __main__ - ERROR - Lead with id 999 not found.
+2026-06-03 12:50:39,443 - src.repository - INFO - Created lead 3 with phone 555-6943
+2026-06-03 12:50:39,449 - src.repository - INFO - Created lead 4 with phone 555-9980
+2026-06-03 12:50:39,455 - src.repository - INFO - Created lead 5 with phone 555-1351
+2026-06-03 12:50:39,461 - src.repository - INFO - Created lead 6 with phone 555-8526
+2026-06-03 12:50:39,467 - src.repository - INFO - Created lead 7 with phone 555-1600
+2026-06-03 12:50:39,473 - src.repository - INFO - Created lead 8 with phone 555-1211
+2026-06-03 12:50:39,479 - src.repository - INFO - Created lead 9 with phone 555-3726
+2026-06-03 12:50:39,485 - src.repository - INFO - Created lead 10 with phone 555-5360
+2026-06-03 12:50:39,491 - src.repository - INFO - Created lead 11 with phone 555-2440
+2026-06-03 12:50:39,497 - src.repository - INFO - Created lead 12 with phone 555-4320
+2026-06-03 12:50:39,504 - src.repository - INFO - Created lead 13 with phone 555-7707
+2026-06-03 12:50:39,510 - src.repository - INFO - Created lead 14 with phone 555-8191
+2026-06-03 12:50:39,517 - src.repository - INFO - Created lead 15 with phone 555-1252
+2026-06-03 12:50:39,523 - src.repository - INFO - Created lead 16 with phone 555-4229
+2026-06-03 12:50:39,529 - src.repository - INFO - Created lead 17 with phone 555-5999
+2026-06-03 12:50:39,535 - src.repository - INFO - Created lead 18 with phone 555-3035
+2026-06-03 12:50:39,541 - src.repository - INFO - Created lead 19 with phone 555-6195
+2026-06-03 12:50:39,546 - src.repository - INFO - Created lead 20 with phone 555-8616
+2026-06-03 12:50:39,552 - src.repository - INFO - Created lead 21 with phone 555-3603
+2026-06-03 12:50:39,558 - src.repository - INFO - Created lead 22 with phone 555-8819
+2026-06-03 12:50:39,564 - src.repository - INFO - Created lead 23 with phone 555-5773
+2026-06-03 12:50:39,570 - src.repository - INFO - Created lead 24 with phone 555-7100
+2026-06-03 12:50:39,576 - src.repository - INFO - Created lead 25 with phone 555-8912
+2026-06-03 12:50:39,581 - src.repository - INFO - Created lead 26 with phone 555-7027
+2026-06-03 12:50:39,588 - src.repository - INFO - Created lead 27 with phone 555-6333
+2026-06-03 12:50:39,594 - src.repository - INFO - Created lead 28 with phone 555-5435
+2026-06-03 12:50:39,600 - src.repository - INFO - Created lead 29 with phone 555-8123
+2026-06-03 12:50:39,606 - src.repository - INFO - Created lead 30 with phone 555-8108
+2026-06-03 12:50:39,612 - src.repository - INFO - Created lead 31 with phone 555-8934
+2026-06-03 12:50:39,617 - src.repository - INFO - Created lead 32 with phone 555-9064
+2026-06-03 12:50:39,623 - src.repository - INFO - Created lead 33 with phone 555-9508
+2026-06-03 12:50:39,629 - src.repository - INFO - Created lead 34 with phone 555-9993
+2026-06-03 12:50:39,635 - src.repository - INFO - Created lead 35 with phone 555-5411
+2026-06-03 12:50:39,641 - src.repository - INFO - Created lead 36 with phone 555-8903
+2026-06-03 12:50:39,647 - src.repository - INFO - Created lead 37 with phone 555-9375
+2026-06-03 12:50:39,654 - src.repository - INFO - Created lead 38 with phone 555-6737
+2026-06-03 12:50:39,661 - src.repository - INFO - Created lead 39 with phone 555-5345
+2026-06-03 12:50:39,667 - src.repository - INFO - Created lead 40 with phone 555-5219
+2026-06-03 12:50:39,673 - src.repository - INFO - Created lead 41 with phone 555-5159
+2026-06-03 12:50:39,679 - src.repository - INFO - Created lead 42 with phone 555-2295
+2026-06-03 12:50:39,686 - src.repository - INFO - Created lead 43 with phone 555-5156
+2026-06-03 12:50:39,693 - src.repository - INFO - Created lead 44 with phone 555-7022
+2026-06-03 12:50:39,701 - src.repository - INFO - Created lead 45 with phone 555-5492
+2026-06-03 12:50:39,708 - src.repository - INFO - Created lead 46 with phone 555-8730
+2026-06-03 12:50:39,715 - src.repository - INFO - Created lead 47 with phone 555-4518
+2026-06-03 12:50:39,723 - src.repository - INFO - Created lead 48 with phone 555-1986
+2026-06-03 12:50:39,729 - src.repository - INFO - Created lead 49 with phone 555-1208
+2026-06-03 12:50:39,736 - src.repository - INFO - Created lead 50 with phone 555-5856
+2026-06-03 12:50:39,743 - src.repository - INFO - Created lead 51 with phone 555-1965
+2026-06-03 12:50:39,749 - src.repository - INFO - Created lead 52 with phone 555-7799
+2026-06-03 12:50:39,756 - src.repository - INFO - Created lead 53 with phone 555-6867
+2026-06-03 12:50:39,763 - src.repository - INFO - Created lead 54 with phone 555-5818
+2026-06-03 12:50:39,771 - src.repository - INFO - Created lead 55 with phone 555-2333
+2026-06-03 12:50:39,777 - src.repository - INFO - Created lead 56 with phone 555-7706
+2026-06-03 12:50:39,782 - src.repository - INFO - Created lead 57 with phone 555-4223
+2026-06-03 12:50:39,788 - src.repository - INFO - Created lead 58 with phone 555-6844
+2026-06-03 12:50:39,794 - src.repository - INFO - Created lead 59 with phone 555-9965
+2026-06-03 12:50:39,801 - src.repository - INFO - Created lead 60 with phone 555-3011
+2026-06-03 12:50:39,807 - src.repository - INFO - Created lead 61 with phone 555-1322
+2026-06-03 12:50:39,814 - src.repository - INFO - Created lead 62 with phone 555-7122
+2026-06-03 12:50:39,820 - src.repository - INFO - Created lead 63 with phone 555-2935
+2026-06-03 12:50:39,827 - src.repository - INFO - Created lead 64 with phone 555-2213
+2026-06-03 12:50:39,832 - src.repository - INFO - Created lead 65 with phone 555-4423
+2026-06-03 12:50:39,838 - src.repository - INFO - Created lead 66 with phone 555-5395
+2026-06-03 12:50:39,844 - src.repository - INFO - Created lead 67 with phone 555-6755
+2026-06-03 12:50:39,850 - src.repository - INFO - Created lead 68 with phone 555-4371
+2026-06-03 12:50:39,861 - src.repository - INFO - Created lead 69 with phone 555-3560
+2026-06-03 12:50:39,867 - src.repository - INFO - Created lead 70 with phone 555-2286
+2026-06-03 12:50:39,873 - src.repository - INFO - Created lead 71 with phone 555-6703
+2026-06-03 12:50:39,879 - src.repository - INFO - Created lead 72 with phone 555-4508
+2026-06-03 12:50:39,885 - src.repository - INFO - Created lead 73 with phone 555-5384
+2026-06-03 12:50:39,892 - src.repository - INFO - Created lead 74 with phone 555-9853
+2026-06-03 12:50:39,898 - src.repository - INFO - Created lead 75 with phone 555-2772
+2026-06-03 12:50:39,906 - src.repository - INFO - Created lead 76 with phone 555-4413
+2026-06-03 12:50:39,913 - src.repository - INFO - Created lead 77 with phone 555-4574
+2026-06-03 12:50:39,921 - src.repository - INFO - Created lead 78 with phone 555-7746
+2026-06-03 12:50:39,927 - src.repository - INFO - Created lead 79 with phone 555-1996
+2026-06-03 12:50:39,933 - src.repository - INFO - Created lead 80 with phone 555-4176
+2026-06-03 12:50:39,940 - src.repository - INFO - Created lead 81 with phone 555-5078
+2026-06-03 12:50:39,946 - src.repository - INFO - Created lead 82 with phone 555-8390
+2026-06-03 12:50:39,953 - src.repository - INFO - Created lead 83 with phone 555-2846
+2026-06-03 12:50:39,959 - src.repository - INFO - Created lead 84 with phone 555-1403
+2026-06-03 12:50:39,964 - src.repository - INFO - Created lead 85 with phone 555-4164
+2026-06-03 12:50:39,971 - src.repository - INFO - Created lead 86 with phone 555-4374
+2026-06-03 12:50:39,977 - src.repository - INFO - Created lead 87 with phone 555-1472
+2026-06-03 12:50:39,982 - src.repository - INFO - Created lead 88 with phone 555-6006
+2026-06-03 12:50:39,988 - src.repository - INFO - Created lead 89 with phone 555-9544
+2026-06-03 12:50:39,995 - src.repository - INFO - Created lead 90 with phone 555-6598
+2026-06-03 12:50:40,001 - src.repository - INFO - Created lead 91 with phone 555-1884
+2026-06-03 12:50:40,009 - src.repository - INFO - Created lead 92 with phone 555-1183
+2026-06-03 12:50:40,015 - src.repository - INFO - Created lead 93 with phone 555-4477
+2026-06-03 12:50:40,021 - src.repository - INFO - Created lead 94 with phone 555-4874
+2026-06-03 12:50:40,027 - src.repository - INFO - Created lead 95 with phone 555-6812
+2026-06-03 12:50:40,033 - src.repository - INFO - Created lead 96 with phone 555-9767
+2026-06-03 12:50:40,039 - src.repository - INFO - Created lead 97 with phone 555-4285
+2026-06-03 12:50:40,045 - src.repository - INFO - Created lead 98 with phone 555-1103
+2026-06-03 12:50:40,052 - src.repository - INFO - Created lead 99 with phone 555-6068
+2026-06-03 12:50:40,060 - src.repository - INFO - Created lead 100 with phone 555-9972
+2026-06-03 12:50:40,067 - src.repository - INFO - Created lead 101 with phone 555-5243
+2026-06-03 12:50:40,073 - src.repository - INFO - Created lead 102 with phone 555-2120
+2026-06-03 12:50:40,079 - src.repository - INFO - Created lead 103 with phone 555-3605
+2026-06-03 12:50:40,084 - src.repository - INFO - Created lead 104 with phone 555-4150
+2026-06-03 12:50:40,091 - src.repository - INFO - Created lead 105 with phone 555-9232
+2026-06-03 12:50:40,097 - src.repository - INFO - Created lead 106 with phone 555-1334
+2026-06-03 12:50:40,104 - src.repository - INFO - Created lead 107 with phone 555-1002
+2026-06-03 12:50:40,110 - src.repository - INFO - Created lead 108 with phone 555-2993
+2026-06-03 12:50:40,116 - src.repository - INFO - Created lead 109 with phone 555-8370
+2026-06-03 12:50:40,122 - src.repository - INFO - Created lead 110 with phone 555-5868
+2026-06-03 12:50:40,128 - src.repository - INFO - Created lead 111 with phone 555-7468
+2026-06-03 12:50:40,134 - src.repository - INFO - Created lead 112 with phone 555-1153
+2026-06-03 12:50:40,140 - src.repository - INFO - Created lead 113 with phone 555-2502
+2026-06-03 12:50:40,147 - src.repository - INFO - Created lead 114 with phone 555-6877
+2026-06-03 12:50:40,155 - src.repository - INFO - Created lead 115 with phone 555-8213
+2026-06-03 12:50:40,161 - src.repository - INFO - Created lead 116 with phone 555-7668
+2026-06-03 12:50:40,167 - src.repository - INFO - Created lead 117 with phone 555-4614
+2026-06-03 12:50:40,173 - src.repository - INFO - Created lead 118 with phone 555-2634
+2026-06-03 12:50:40,179 - src.repository - INFO - Created lead 119 with phone 555-6397
+2026-06-03 12:50:40,186 - src.repository - INFO - Created lead 120 with phone 555-6887
+2026-06-03 12:50:40,193 - src.repository - INFO - Created lead 121 with phone 555-3494
+2026-06-03 12:50:40,199 - src.repository - INFO - Created lead 122 with phone 555-7314
+2026-06-03 12:50:40,206 - src.repository - INFO - Created lead 123 with phone 555-6650
+2026-06-03 12:50:40,212 - src.repository - INFO - Created lead 124 with phone 555-2127
+2026-06-03 12:50:40,219 - src.repository - INFO - Created lead 125 with phone 555-8700
+2026-06-03 12:50:40,226 - src.repository - INFO - Created lead 126 with phone 555-7397
+2026-06-03 12:50:40,232 - src.repository - INFO - Created lead 127 with phone 555-5916
+2026-06-03 12:50:40,239 - src.repository - INFO - Created lead 128 with phone 555-9868
+2026-06-03 12:50:40,246 - src.repository - INFO - Created lead 129 with phone 555-7990
+2026-06-03 12:50:40,254 - src.repository - INFO - Created lead 130 with phone 555-4192
+2026-06-03 12:50:40,265 - src.repository - INFO - Created lead 131 with phone 555-8522
+2026-06-03 12:50:40,273 - src.repository - INFO - Created lead 132 with phone 555-8654
+2026-06-03 12:50:40,279 - src.repository - INFO - Created lead 133 with phone 555-3980
+2026-06-03 12:50:40,284 - src.repository - INFO - Created lead 134 with phone 555-4236
+2026-06-03 12:50:40,290 - src.repository - INFO - Created lead 135 with phone 555-1748
+2026-06-03 12:50:40,301 - src.repository - INFO - Created lead 136 with phone 555-4557
+2026-06-03 12:50:40,309 - src.repository - INFO - Created lead 137 with phone 555-8169
+2026-06-03 12:50:40,315 - src.repository - INFO - Created lead 138 with phone 555-6469
+2026-06-03 12:50:40,321 - src.repository - INFO - Created lead 139 with phone 555-9124
+2026-06-03 12:50:40,328 - src.repository - INFO - Created lead 140 with phone 555-9757
+2026-06-03 12:50:40,333 - src.repository - INFO - Created lead 141 with phone 555-7276
+2026-06-03 12:50:40,340 - src.repository - INFO - Created lead 142 with phone 555-5931
+2026-06-03 12:50:40,346 - src.repository - INFO - Created lead 143 with phone 555-2837
+2026-06-03 12:50:40,353 - src.repository - INFO - Created lead 144 with phone 555-9123
+2026-06-03 12:50:40,360 - src.repository - INFO - Created lead 145 with phone 555-3051
+2026-06-03 12:50:40,367 - src.repository - INFO - Created lead 146 with phone 555-5500
+2026-06-03 12:50:40,374 - src.repository - INFO - Created lead 147 with phone 555-2672
+2026-06-03 12:50:40,379 - src.repository - INFO - Created lead 148 with phone 555-7494
+2026-06-03 12:50:40,385 - src.repository - INFO - Created lead 149 with phone 555-9245
+2026-06-03 12:50:40,391 - src.repository - INFO - Created lead 150 with phone 555-9014
+2026-06-03 12:50:40,396 - src.repository - INFO - Created lead 151 with phone 555-9421
+2026-06-03 12:50:40,404 - src.repository - INFO - Created lead 152 with phone 555-4331
+2026-06-03 12:50:40,410 - src.repository - INFO - Created lead 153 with phone 555-7097
+2026-06-03 12:50:40,416 - src.repository - INFO - Created lead 154 with phone 555-7099
+2026-06-03 12:50:40,422 - src.repository - INFO - Created lead 155 with phone 555-3456
+2026-06-03 12:50:40,428 - src.repository - INFO - Created lead 156 with phone 555-1671
+2026-06-03 12:50:40,434 - src.repository - INFO - Created lead 157 with phone 555-4234
+2026-06-03 12:50:40,440 - src.repository - INFO - Created lead 158 with phone 555-9327
+2026-06-03 12:50:40,447 - src.repository - INFO - Created lead 159 with phone 555-6972
+2026-06-03 12:50:40,453 - src.repository - INFO - Created lead 160 with phone 555-6787
+2026-06-03 12:50:40,461 - src.repository - INFO - Created lead 161 with phone 555-2239
+2026-06-03 12:50:40,466 - src.repository - INFO - Created lead 162 with phone 555-6211
+2026-06-03 12:50:40,472 - src.repository - INFO - Created lead 163 with phone 555-2197
+2026-06-03 12:50:40,478 - src.repository - INFO - Created lead 164 with phone 555-2194
+2026-06-03 12:50:40,484 - src.repository - INFO - Created lead 165 with phone 555-8784
+2026-06-03 12:50:40,490 - src.repository - INFO - Created lead 166 with phone 555-1140
+2026-06-03 12:50:40,497 - src.repository - INFO - Created lead 167 with phone 555-1427
+2026-06-03 12:50:40,503 - src.repository - INFO - Created lead 168 with phone 555-5117
+2026-06-03 12:50:40,510 - src.repository - INFO - Created lead 169 with phone 555-4618
+2026-06-03 12:50:40,516 - src.repository - INFO - Created lead 170 with phone 555-8457
+2026-06-03 12:50:40,522 - src.repository - INFO - Created lead 171 with phone 555-3161
+2026-06-03 12:53:14,010 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,011 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,011 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,012 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,013 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,013 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,014 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,014 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,015 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,015 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,016 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,017 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,017 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,018 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,019 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,020 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,020 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,021 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,022 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,022 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,023 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,023 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,024 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,025 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,025 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,026 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,026 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,027 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,027 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,028 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,029 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,029 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,030 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,030 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,031 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,031 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,032 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,032 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,033 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,034 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,035 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,035 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,036 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,037 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,037 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,038 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,038 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,039 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,039 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,040 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,040 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,041 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,042 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,042 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,043 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,043 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,044 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,044 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,045 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,046 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,049 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,050 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,051 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,052 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,052 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,053 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,053 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,054 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,054 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,055 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,055 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,056 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,056 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,057 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,057 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,058 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,059 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,059 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,060 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,060 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,061 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,061 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,062 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,062 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,063 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,063 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,064 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,064 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,065 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,065 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,066 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,066 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,067 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,068 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,069 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,069 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,070 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,070 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,071 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,071 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,072 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,072 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,073 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,073 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,074 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,074 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,075 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,075 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,076 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,076 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,077 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,078 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,078 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,079 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,079 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,080 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,080 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,081 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,081 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,082 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,082 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,083 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,083 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,084 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,085 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,086 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,086 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,087 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,087 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,088 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,088 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,089 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,089 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,090 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,090 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,091 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,091 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,092 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,092 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,093 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,094 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,094 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,095 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,095 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,096 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,096 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,097 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,097 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,098 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,098 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,099 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,099 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,100 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,100 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,101 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,102 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,103 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,103 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,104 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,104 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,105 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,105 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,106 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,106 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,107 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,107 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,108 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,109 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
+2026-06-03 12:53:14,109 - src.repository - ERROR - Failed to create lead due to integrity error: UNIQUE constraint failed: leads.phone
