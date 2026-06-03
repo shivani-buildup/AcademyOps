@@ -37,7 +37,8 @@ selected_source = st.sidebar.selectbox("Lead Source", all_sources)
 # Date filter
 min_date = df['created_at'].min().date()
 max_date = df['created_at'].max().date()
-date_range = st.sidebar.date_input("Date Range", [min_date, max_date], min_value=min_date, max_value=max_date)
+start_date = st.sidebar.date_input("Start Date", min_date)
+end_date = st.sidebar.date_input("End Date", max_date)
 
 # Apply filters
 filtered_df = df.copy()
@@ -45,12 +46,17 @@ filtered_df = df.copy()
 if selected_source != "All":
     filtered_df = filtered_df[filtered_df['source'] == selected_source]
 
-if len(date_range) == 2:
-    start_date, end_date = date_range
-    # convert to datetime for comparison
+if True:
+    # convert to datetime for comparison, localizing to UTC if needed
     start_dt = pd.to_datetime(start_date)
-    end_dt = pd.to_datetime(end_date) + pd.Timedelta(days=1) - pd.Timedelta(seconds=1)
-    filtered_df = filtered_df[(filtered_df['created_at'] >= start_dt) & (filtered_df['created_at'] <= end_dt)]
+    end_dt = pd.to_datetime(end_date) + pd.Timedelta(days=1)
+    
+    # If the dataframe column is tz-aware, we need to tz-localize our filters
+    if df['created_at'].dt.tz is not None:
+        start_dt = start_dt.tz_localize(df['created_at'].dt.tz)
+        end_dt = end_dt.tz_localize(df['created_at'].dt.tz)
+        
+    filtered_df = filtered_df[(filtered_df['created_at'] >= start_dt) & (filtered_df['created_at'] < end_dt)]
 
 # 3. KPI Cards
 st.subheader("Key Performance Indicators")
