@@ -3,7 +3,8 @@ from sqlalchemy.orm import Session
 from typing import List, Optional
 from src.database import get_db, engine, Base
 from src.models import LeadModel
-from src.schemas import LeadCreate, LeadUpdateStage, LeadResponse
+from src.schemas import LeadCreate, LeadUpdateStage, LeadResponse, MessageRequest, MessageResponse
+from src.classifier import RuleBasedClassifier
 from sqlalchemy.exc import IntegrityError
 import logging
 
@@ -11,6 +12,7 @@ import logging
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="AcademyOps API", version="1.0.0")
+classifier_instance = RuleBasedClassifier()
 
 logging.basicConfig(filename='academyops.log', level=logging.INFO)
 
@@ -84,3 +86,13 @@ def delete_lead(lead_id: int, db: Session = Depends(get_db)):
     db.commit()
     logging.info(f"Deleted lead {lead_id}")
     return None
+
+@app.post("/api/v1/leads/{lead_id}/message", response_model=MessageResponse)
+def classify_message(lead_id: int, msg: MessageRequest, db: Session = Depends(get_db)):
+    # Verify lead exists
+    lead = db.query(LeadModel).filter(LeadModel.id == lead_id).first()
+    if not lead:
+        raise HTTPException(status_code=404, detail="Lead not found")
+        
+    result = classifier_instance.classify(msg.message)
+    return result

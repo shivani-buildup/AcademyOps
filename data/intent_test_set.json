@@ -1,0 +1,27 @@
+[
+    {"message": "How much does the data science course cost?", "true_intent": "fees"},
+    {"message": "Can you send me the pricing details?", "true_intent": "fees"},
+    {"message": "What is the fee structure for the evening batch?", "true_intent": "fees"},
+    {"message": "Do I have to pay upfront?", "true_intent": "fees"},
+    {"message": "I want to know the cost of the program.", "true_intent": "fees"},
+    
+    {"message": "When does the next batch start?", "true_intent": "timing"},
+    {"message": "What is the duration of the course?", "true_intent": "timing"},
+    {"message": "Can I join the morning schedule?", "true_intent": "timing"},
+    {"message": "How many months will it take to finish?", "true_intent": "timing"},
+    {"message": "I need to know the class timings.", "true_intent": "timing"},
+    
+    {"message": "Do I need a computer science degree?", "true_intent": "eligibility"},
+    {"message": "What is the eligibility requirement for this course?", "true_intent": "eligibility"},
+    {"message": "I have no prior experience in coding, can I join?", "true_intent": "eligibility"},
+    {"message": "Will my background in commerce be okay?", "true_intent": "eligibility"},
+    {"message": "Do I qualify for this training?", "true_intent": "eligibility"},
+    
+    {"message": "Please stop messaging me.", "true_intent": "not_interested"},
+    {"message": "I am not interested anymore.", "true_intent": "not_interested"},
+    {"message": "Cancel my registration.", "true_intent": "not_interested"},
+    
+    {"message": "Can you call me tomorrow?", "true_intent": "other"},
+    {"message": "I need help with my login.", "true_intent": "other"},
+    {"message": "Who is the instructor?", "true_intent": "other"}
+]

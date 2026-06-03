@@ -21,3 +21,11 @@ class LeadResponse(LeadBase):
     
     class Config:
         from_attributes = True
+
+class MessageRequest(BaseModel):
+    message: str = Field(..., min_length=1)
+
+class MessageResponse(BaseModel):
+    intent: str
+    suggested_stage: str
+    reply: str
