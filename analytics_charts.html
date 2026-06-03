@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AcademyOps Analytics Charts</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .chart-container { width: 80%; margin: auto; margin-bottom: 50px; }
+    </style>
+</head>
+<body>
+    <h1>AcademyOps: Funnel & Source Analytics</h1>
+    
+    <div class="chart-container">
+        <h2>Lead Funnel Drop-off</h2>
+        <canvas id="funnelChart"></canvas>
+    </div>
+
+    <div class="chart-container">
+        <h2>Conversion Rate by Source (%)</h2>
+        <canvas id="sourceChart"></canvas>
+    </div>
+
+    <script>
+        // Funnel Chart
+        new Chart(document.getElementById('funnelChart'), {
+            type: 'bar',
+            data: {
+                labels: ['New', 'Contacted', 'Qualified', 'Demo', 'Enrolled', 'Lost'],
+                datasets: [{
+                    label: 'Number of Leads',
+                    data: [170, 1, 0, 0, 0, 0],
+                    backgroundColor: 'rgba(54, 162, 235, 0.6)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: { scales: { y: { beginAtZero: true } } }
+        });
+
+        // Source Chart
+        new Chart(document.getElementById('sourceChart'), {
+            type: 'bar',
+            data: {
+                labels: ['Instagram', 'Facebook', 'Google', 'Website', 'Referral', 'Unknown'],
+                datasets: [{
+                    label: 'Conversion Rate (%)',
+                    data: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+                    backgroundColor: 'rgba(75, 192, 192, 0.6)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: { scales: { y: { beginAtZero: true } } }
+        });
+    </script>
+</body>
+</html>
