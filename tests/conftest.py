@@ -1,34 +1,50 @@
 import pytest
 import tempfile
 import os
-import sqlite3
-from src.repository import LeadRepository
-from src.api import app
-from src.db_init import init_db
-from unittest.mock import patch
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+from src.database import Base, get_db
+from src.main import app
 
-@pytest.fixture
-def in_memory_repo():
-    # Use a real temp file so connections work identically to production
-    fd, path = tempfile.mkstemp(suffix=".db")
-    os.close(fd)
-    
-    # Initialize the schema
-    init_db(path)
-    
-    repo = LeadRepository(path)
-    yield repo
-    
-    # Cleanup
+# We won't actually be able to import TestClient if fastapi is not installed
+# but this is the standard FastAPI TestClient implementation for the new stack.
+try:
+    from fastapi.testclient import TestClient
+except ImportError:
+    TestClient = None
+
+@pytest.fixture(scope="session")
+def db_engine():
+    # Use an in-memory SQLite database for testing the FastAPI application
+    engine = create_engine(
+        "sqlite:///:memory:",
+        connect_args={"check_same_thread": False}
+    )
+    Base.metadata.create_all(bind=engine)
+    yield engine
+    Base.metadata.drop_all(bind=engine)
+
+@pytest.fixture(scope="function")
+def db_session(db_engine):
+    SessionTesting = sessionmaker(autocommit=False, autoflush=False, bind=db_engine)
+    session = SessionTesting()
     try:
-        os.remove(path)
-    except OSError:
-        pass
+        yield session
+    finally:
+        session.close()
 
-@pytest.fixture
-def test_client(in_memory_repo):
-    # Patch the get_repo in api.py to return our in-memory repo
-    with patch('src.api.get_repo', return_value=in_memory_repo):
-        app.config['TESTING'] = True
-        with app.test_client() as client:
-            yield client
+@pytest.fixture(scope="function")
+def test_client(db_session):
+    if not TestClient:
+        pytest.skip("FastAPI not installed")
+        
+    def override_get_db():
+        try:
+            yield db_session
+        finally:
+            pass
+            
+    app.dependency_overrides[get_db] = override_get_db
+    with TestClient(app) as client:
+        yield client
+    app.dependency_overrides.clear()
