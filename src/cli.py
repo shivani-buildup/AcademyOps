@@ -6,6 +6,7 @@ from .models import Lead, LeadStage
 from .repository import LeadRepository
 from .exceptions import LeadError, DuplicatePhoneError, InvalidStageError
 from .db_init import init_db
+from .importer import DataImporter
 
 def setup_logging():
     logging.basicConfig(
@@ -46,6 +47,11 @@ def main():
     delete_parser = subparsers.add_parser("delete", help="Delete a lead")
     delete_parser.add_argument("--id", type=int, required=True, help="Lead ID")
     
+    # Import command
+    import_parser = subparsers.add_parser("import", help="Import leads from a CSV file")
+    import_parser.add_argument("--file", required=True, help="Path to input CSV file")
+    import_parser.add_argument("--quarantine", default="data/quarantine.csv", help="Path to write quarantined rows")
+    
     args = parser.parse_args()
     
     if not args.command:
@@ -82,6 +88,10 @@ def main():
         elif args.command == "delete":
             repo.delete(args.id)
             print(f"Success! Deleted Lead ID {args.id}")
+            
+        elif args.command == "import":
+            importer = DataImporter(repo)
+            importer.process_file(args.file, args.quarantine)
             
     except DuplicatePhoneError as e:
         logger.error(str(e))
