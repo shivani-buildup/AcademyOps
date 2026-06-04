@@ -1,10 +1,34 @@
 import streamlit as st
 import pandas as pd
 import sqlite3
+import plotly.express as px
 from datetime import datetime
 
 # Configure Streamlit page
-st.set_page_config(page_title="AcademyOps Dashboard", page_icon="📊", layout="wide")
+st.set_page_config(page_title="AcademyOps Dashboard", page_icon="📈", layout="wide")
+
+# Custom CSS for Premium Design
+st.markdown("""
+<style>
+    /* Metric Cards */
+    div[data-testid="metric-container"] {
+        background-color: #1e293b;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        border-left: 5px solid #3b82f6;
+        transition: transform 0.2s ease-in-out;
+    }
+    div[data-testid="metric-container"]:hover {
+        transform: translateY(-5px);
+    }
+    /* Headers */
+    h1, h2, h3 {
+        color: #f8fafc;
+        font-family: 'Inter', sans-serif;
+    }
+</style>
+""", unsafe_allow_html=True)
 st.title("AcademyOps Operations Dashboard")
 
 # 1. Load Data
@@ -82,7 +106,15 @@ stage_order = ['New', 'Contacted', 'Qualified', 'Demo', 'Enrolled', 'Lost']
 funnel_counts = filtered_df['stage'].value_counts().reindex(stage_order).fillna(0)
 funnel_df = pd.DataFrame({'Stage': funnel_counts.index, 'Count': funnel_counts.values})
 
-st.bar_chart(funnel_df.set_index('Stage'), height=300)
+fig = px.funnel(funnel_df, x='Count', y='Stage', title='',
+                color_discrete_sequence=['#3b82f6'])
+fig.update_layout(
+    paper_bgcolor='rgba(0,0,0,0)', 
+    plot_bgcolor='rgba(0,0,0,0)', 
+    font=dict(color='#f8fafc'),
+    margin=dict(l=20, r=20, t=20, b=20)
+)
+st.plotly_chart(fig, use_container_width=True)
 
 st.markdown("---")
 

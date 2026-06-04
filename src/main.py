@@ -1,4 +1,5 @@
 from fastapi import FastAPI, Depends, HTTPException, Query
+from fastapi.openapi.docs import get_swagger_ui_html
 from sqlalchemy.orm import Session
 from typing import List, Optional
 from src.database import get_db, engine, Base
@@ -11,7 +12,17 @@ import logging
 # Initialize DB schema
 Base.metadata.create_all(bind=engine)
 
-app = FastAPI(title="AcademyOps API", version="1.0.0")
+app = FastAPI(title="AcademyOps API", version="1.0.0", docs_url=None)
+
+@app.get("/docs", include_in_schema=False)
+async def custom_swagger_ui_html():
+    return get_swagger_ui_html(
+        openapi_url=app.openapi_url,
+        title=app.title + " - Swagger UI",
+        oauth2_redirect_url=app.swagger_ui_oauth2_redirect_url,
+        swagger_js_url="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5/swagger-ui-bundle.js",
+        swagger_css_url="https://cdn.jsdelivr.net/npm/swagger-ui-themes@3.0.0/themes/3.x/theme-material.css",
+    )
 classifier_instance = RuleBasedClassifier()
 
 logging.basicConfig(filename='academyops.log', level=logging.INFO)
