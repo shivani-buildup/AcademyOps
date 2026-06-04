@@ -3,7 +3,9 @@ import tempfile
 import os
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+from sqlalchemy.pool import StaticPool
 from src.database import Base, get_db
+from src.models import LeadModel  # Required for Base.metadata to know about the table
 from src.main import app
 
 # We won't actually be able to import TestClient if fastapi is not installed
@@ -18,7 +20,8 @@ def db_engine():
     # Use an in-memory SQLite database for testing the FastAPI application
     engine = create_engine(
         "sqlite:///:memory:",
-        connect_args={"check_same_thread": False}
+        connect_args={"check_same_thread": False},
+        poolclass=StaticPool
     )
     Base.metadata.create_all(bind=engine)
     yield engine
@@ -48,3 +51,38 @@ def test_client(db_session):
     with TestClient(app) as client:
         yield client
     app.dependency_overrides.clear()
+
+from src.repository import LeadRepository
+import sqlite3
+
+@pytest.fixture
+def in_memory_repo():
+    db_fd, db_path = tempfile.mkstemp()
+    os.close(db_fd)  # Close the OS file descriptor immediately so SQLite can own it
+    
+    repo = LeadRepository(db_path)
+    
+    conn = sqlite3.connect(repo.db_path)
+    try:
+        conn.execute("""
+            CREATE TABLE leads (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                name TEXT NOT NULL,
+                phone TEXT UNIQUE NOT NULL,
+                source TEXT,
+                stage TEXT DEFAULT 'New',
+                notes TEXT,
+                created_at DATETIME,
+                updated_at DATETIME
+            )
+        """)
+        conn.commit()
+    finally:
+        conn.close()
+
+    yield repo
+    
+    try:
+        os.unlink(db_path)
+    except PermissionError:
+        pass  # Just in case Windows still complains

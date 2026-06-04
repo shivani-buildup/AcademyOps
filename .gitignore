@@ -24,3 +24,8 @@ __pycache__/
 # Data Files (unless specifically tracked)
 data/*.csv
 !data/.keep
+
+# Added cleanup ignores
+venv_streamlit/
+.pytest_cache/
+academyops.log
