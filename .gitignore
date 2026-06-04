@@ -29,4 +29,3 @@ data/*.csv
 venv_streamlit/
 .pytest_cache/
 academyops.log
-venv2/

@@ -24,8 +24,8 @@ if len(df) == 0:
     exit()
 
 # Parse dates
-df['created_at'] = pd.to_datetime(df['created_at'])
-df['updated_at'] = pd.to_datetime(df['updated_at'])
+df['created_at'] = pd.to_datetime(df['created_at'], format='mixed', errors='coerce', utc=True)
+df['updated_at'] = pd.to_datetime(df['updated_at'], format='mixed', errors='coerce', utc=True)
 
 # Compute time in stage (simplified as updated_at - created_at)
 df['time_in_pipeline'] = (df['updated_at'] - df['created_at']).dt.total_seconds() / 3600.0 # in hours
