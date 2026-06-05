@@ -1,67 +1,81 @@
 Name,Phone,Source,Stage,Notes,rejection_reason
-sArAh Garcia,555-6254,,New,,Duplicate Phone in Batch
-michael jones,,insta,Enrolled,Auto-generated note 8,Missing or Invalid Phone
-Alice Smith,,IG,Demo,Auto-generated note 14,Missing or Invalid Phone
-,555-5169,Website,Contacted,Auto-generated note 15,Missing Name
-John Smith,555-1102,Facebook,Qualified,,Duplicate Phone in Batch
-olivia Garcia,,FB,New,Auto-generated note 26,Missing or Invalid Phone
-  david JONES  ,,Facebook,New,Auto-generated note 30,Missing or Invalid Phone
-David Davis,555-3479D,referral,Contacted,Auto-generated note 33,Missing or Invalid Phone
-emma jones,555-8331N,FB,Contacted,,Missing or Invalid Phone
-  jane RODRIGUEZ  ,,,New,Auto-generated note 43,Missing or Invalid Phone
-sArAh Doe,555-9205e,Google,New,Auto-generated note 44,Missing or Invalid Phone
-olivia rodriguez,555-4674,Facebook,Qualified,Auto-generated note 51,Duplicate Phone in Batch
-Alice jones,,Facebook,Demo,Auto-generated note 54,Missing or Invalid Phone
-emma jones,555-3479D,Instagram,Enrolled,Auto-generated note 55,Missing or Invalid Phone
-,555-6323,Website,Enrolled,,Missing Name
-John rodriguez,,Website,Demo,,Missing or Invalid Phone
-olivia rodriguez,555-6446,FB,Demo,,Duplicate Phone in Batch
-Alice jones,555-9433,Facebook,New,Auto-generated note 64,Duplicate Phone in Batch
-David jones,555-6805P,Facebook,Contacted,,Missing or Invalid Phone
-David Johnson,,,New,,Missing or Invalid Phone
-sArAh Doe,555-6586,Google,Qualified,,Duplicate Phone in Batch
-Jane Smith,555-1189E,Website,New,,Missing or Invalid Phone
-  alice JOHNSON  ,,insta,New,,Missing or Invalid Phone
-Bob Smith,,insta,New,,Missing or Invalid Phone
-Jane Brown,555-3179S,Google,Contacted,Auto-generated note 90,Missing or Invalid Phone
-emma rodriguez,,Instagram,Demo,,Missing or Invalid Phone
-John Smith,555-9620,IG,Contacted,Auto-generated note 99,Duplicate Phone in Batch
-David Brown,555-7312,Google,Qualified,Auto-generated note 111,Duplicate Phone in Batch
-emma Davis,555-1791,FB,Contacted,,Duplicate Phone in Batch
-  olivia BROWN  ,555-2527,Website,New,,Duplicate Phone in Batch
-Chris Johnson,555-2862,insta,New,Auto-generated note 127,Duplicate Phone in Batch
-Bob rodriguez,555-8319,Website,Qualified,,Duplicate Phone in Batch
-  alice BROWN  ,,Instagram,Contacted,,Missing or Invalid Phone
-sArAh Davis,555-3824,FB,Qualified,Auto-generated note 132,Duplicate Phone in Batch
-Bob Doe,,FB,Demo,Auto-generated note 135,Missing or Invalid Phone
-,555-7414,Instagram,Contacted,Auto-generated note 140,Missing Name
-,555-5849,IG,Qualified,,Missing Name
-,555-3021,Facebook,Lost,,Missing Name
-,555-5592,FB,New,Auto-generated note 151,Missing Name
-Chris Johnson,555-6372,Google,Contacted,,Duplicate Phone in Batch
-  olivia GARCIA  ,555-4674,insta,Lost,,Duplicate Phone in Batch
-olivia rodriguez,555-3668M,FB,Qualified,Auto-generated note 162,Missing or Invalid Phone
-,555-4028,referral,Enrolled,,Missing Name
-olivia Johnson,555-5067,Instagram,New,Auto-generated note 172,Duplicate Phone in Batch
-Jane Doe,555-8403,Instagram,Qualified,Auto-generated note 175,Duplicate Phone in Batch
-emma Garcia,555-9560,,Contacted,,Duplicate Phone in Batch
-,555-7269,,Demo,Auto-generated note 179,Missing Name
-michael Garcia,555-3149,FB,New,Auto-generated note 184,Duplicate Phone in Batch
-David jones,,FB,Demo,Auto-generated note 193,Missing or Invalid Phone
-michael rodriguez,555-2192,Instagram,New,,Duplicate Phone in Batch
-olivia Johnson,555-1866,referral,Demo,Auto-generated note 197,Duplicate Phone in Batch
-David Garcia,,IG,New,Auto-generated note 200,Missing or Invalid Phone
-John Brown,555-4981,IG,New,Auto-generated note 203,Duplicate Phone in Batch
-John Garcia,555-7010b,Instagram,Enrolled,,Missing or Invalid Phone
-Bob Brown,555-5682,FB,Qualified,,Duplicate Phone in Batch
-Alice miller,,Website,New,Auto-generated note 216,Missing or Invalid Phone
-  sarah DOE  ,555-6372,FB,New,,Duplicate Phone in Batch
-sArAh Brown,555-1336,Instagram,Enrolled,,Duplicate Phone in Batch
-John miller,,Google,Qualified,Auto-generated note 225,Missing or Invalid Phone
-Jane jones,555-3572,,Contacted,,Duplicate Phone in Batch
-sArAh Brown,555-8258q,Facebook,New,,Missing or Invalid Phone
-  michael DOE  ,,IG,New,,Missing or Invalid Phone
-,555-6225,FB,New,,Missing Name
-  jane BROWN  ,,insta,New,Auto-generated note 241,Missing or Invalid Phone
-sArAh Garcia,,,Contacted,Auto-generated note 244,Missing or Invalid Phone
-Bob Brown,555-4647u,FB,New,,Missing or Invalid Phone
+olivia Davis,,,Contacted,Auto-generated note 5,Missing or Invalid Phone
+michael jones,,referral,New,,Missing or Invalid Phone
+Chris Garcia,555-8619,,Lost,,Duplicate Phone in Batch
+Bob miller,,Facebook,New,,Missing or Invalid Phone
+John williams,555-5049F,,Lost,,Missing or Invalid Phone
+Chris Garcia,,Facebook,Lost,Auto-generated note 19,Missing or Invalid Phone
+michael Garcia,555-2497,FB,New,,Duplicate Phone in Batch
+John Johnson,,Facebook,Lost,Auto-generated note 21,Missing or Invalid Phone
+emma Smith,,Google,Qualified,Auto-generated note 22,Missing or Invalid Phone
+Alice williams,555-8625,Facebook,Demo,,Duplicate Phone in Batch
+,555-1797,insta,Contacted,Auto-generated note 28,Missing Name
+Alice Smith,,insta,Qualified,Auto-generated note 30,Missing or Invalid Phone
+,555-6212,Facebook,New,Auto-generated note 32,Missing Name
+Chris miller,555-5298,Instagram,Enrolled,,Duplicate Phone in Batch
+olivia rodriguez,555-2922,referral,Contacted,Auto-generated note 38,Duplicate Phone in Batch
+,555-4052,,Demo,,Missing Name
+Chris williams,555-3349,FB,Contacted,Auto-generated note 42,Duplicate Phone in Batch
+emma jones,555-7259,Website,Enrolled,Auto-generated note 45,Duplicate Phone in Batch
+John miller,555-6689,,Contacted,Auto-generated note 47,Duplicate Phone in Batch
+michael miller,555-1476,,Qualified,Auto-generated note 50,Duplicate Phone in Batch
+,555-6560,IG,New,Auto-generated note 52,Missing Name
+,555-7336,insta,New,Auto-generated note 58,Missing Name
+olivia Doe,,Google,Enrolled,Auto-generated note 59,Missing or Invalid Phone
+michael Davis,,IG,Enrolled,,Missing or Invalid Phone
+michael Davis,555-1539,insta,Demo,Auto-generated note 64,Duplicate Phone in Batch
+  sarah SMITH  ,,Instagram,Lost,,Missing or Invalid Phone
+John jones,,Website,New,,Missing or Invalid Phone
+David jones,,Instagram,Enrolled,,Missing or Invalid Phone
+Jane miller,555-7963,IG,New,,Duplicate Phone in Batch
+  alice RODRIGUEZ  ,555-7507F,Facebook,Enrolled,Auto-generated note 83,Missing or Invalid Phone
+Chris Davis,,Facebook,New,Auto-generated note 84,Missing or Invalid Phone
+,555-5607,insta,Qualified,,Missing Name
+Alice Johnson,,Google,Enrolled,Auto-generated note 86,Missing or Invalid Phone
+Bob Doe,,IG,New,Auto-generated note 90,Missing or Invalid Phone
+  chris RODRIGUEZ  ,555-8625,FB,Demo,,Duplicate Phone in Batch
+Alice Doe,555-7363Y,IG,Contacted,,Missing or Invalid Phone
+,555-9557,Google,Lost,,Missing Name
+  emma SMITH  ,555-2166,FB,New,Auto-generated note 103,Duplicate Phone in Batch
+  bob DOE  ,,referral,Qualified,,Missing or Invalid Phone
+,555-5165,insta,New,,Missing Name
+,,Website,Enrolled,Auto-generated note 109,Missing Name
+Alice jones,555-1062,FB,New,Auto-generated note 110,Duplicate Phone in Batch
+emma miller,555-4281X,Website,Demo,,Missing or Invalid Phone
+Chris rodriguez,,referral,Contacted,,Missing or Invalid Phone
+Alice rodriguez,,IG,Lost,,Missing or Invalid Phone
+  david WILLIAMS  ,555-6384,,New,,Duplicate Phone in Batch
+michael williams,555-1476,IG,Contacted,,Duplicate Phone in Batch
+Alice jones,555-5147,Website,Demo,,Duplicate Phone in Batch
+,,Website,Demo,Auto-generated note 131,Missing Name
+olivia williams,555-5136,Website,New,,Duplicate Phone in Batch
+michael williams,555-1479,insta,Qualified,,Duplicate Phone in Batch
+Alice Davis,555-8499,insta,New,Auto-generated note 135,Duplicate Phone in Batch
+,555-7484,referral,New,,Missing Name
+,555-3540,Instagram,Enrolled,,Missing Name
+  sarah BROWN  ,555-2166,referral,New,Auto-generated note 151,Duplicate Phone in Batch
+Alice rodriguez,,Facebook,Qualified,,Missing or Invalid Phone
+Alice Garcia,555-6649,Instagram,Enrolled,Auto-generated note 162,Duplicate Phone in Batch
+michael williams,,Facebook,Qualified,Auto-generated note 164,Missing or Invalid Phone
+John Johnson,555-4089K,insta,Qualified,,Missing or Invalid Phone
+  sarah JOHNSON  ,555-6947,referral,Enrolled,Auto-generated note 179,Duplicate Phone in Batch
+  david WILLIAMS  ,555-7259,referral,Lost,Auto-generated note 184,Duplicate Phone in Batch
+sArAh rodriguez,,referral,New,Auto-generated note 186,Missing or Invalid Phone
+  sarah RODRIGUEZ  ,,referral,New,,Missing or Invalid Phone
+michael Doe,555-1380,Instagram,Enrolled,Auto-generated note 192,Duplicate Phone in Batch
+Alice Brown,555-7389,referral,New,Auto-generated note 194,Duplicate Phone in Batch
+Jane Smith,,FB,Enrolled,Auto-generated note 196,Missing or Invalid Phone
+,,Google,Enrolled,,Missing Name
+michael Garcia,555-5044,IG,Contacted,,Duplicate Phone in Batch
+olivia Doe,,FB,Qualified,Auto-generated note 200,Missing or Invalid Phone
+  sarah WILLIAMS  ,,Google,Contacted,Auto-generated note 203,Missing or Invalid Phone
+David Doe,555-3611,referral,Demo,,Duplicate Phone in Batch
+sArAh jones,,Instagram,Enrolled,,Missing or Invalid Phone
+Chris Davis,555-2576F,Instagram,New,Auto-generated note 209,Missing or Invalid Phone
+Chris williams,555-6233e,Google,New,,Missing or Invalid Phone
+,555-2726,IG,Demo,,Missing Name
+Alice Davis,555-6841o,FB,Contacted,,Missing or Invalid Phone
+sArAh williams,,Facebook,Qualified,,Missing or Invalid Phone
+olivia Brown,555-5579,Google,Lost,Auto-generated note 245,Duplicate Phone in Batch
+,555-1756d,Website,New,,Missing Name
+David Davis,555-4202,Website,New,Auto-generated note 247,Duplicate Phone in Batch
