@@ -9,7 +9,7 @@ def generate_messy_data(output_path: str = "data/messy_leads.csv", num_rows: int
     
     with open(output_path, mode='w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
-        writer.writerow(["Name", "Phone", "Source", "Notes"])
+        writer.writerow(["Name", "Phone", "Source", "Stage", "Notes"])
         
         seen_phones = set()
         
@@ -45,7 +45,11 @@ def generate_messy_data(output_path: str = "data/messy_leads.csv", num_rows: int
             source = random.choice(sources)
             notes = f"Auto-generated note {i}" if random.random() > 0.5 else ""
             
-            writer.writerow([name, phone, source, notes])
+            stages = ["New", "Contacted", "Qualified", "Demo", "Enrolled", "Lost"]
+            weights = [30, 20, 15, 10, 15, 10]
+            stage = random.choices(stages, weights=weights)[0]
+            
+            writer.writerow([name, phone, source, stage, notes])
             
     print(f"Generated {num_rows} messy rows at {output_path}")
 

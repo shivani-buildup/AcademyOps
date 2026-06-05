@@ -29,3 +29,5 @@ data/*.csv
 venv_streamlit/
 .pytest_cache/
 academyops.log
+scratch/
+.gemini/

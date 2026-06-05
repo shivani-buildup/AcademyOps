@@ -3,7 +3,7 @@ import logging
 import re
 from typing import List, Dict, Any, Tuple
 
-from .models import Lead
+from .models import Lead, LeadStage
 from .repository import LeadRepository
 from .exceptions import DuplicatePhoneError
 
@@ -61,6 +61,7 @@ class DataImporter:
                 name_raw = mapped_row.get("name", "")
                 phone_raw = mapped_row.get("phone", "")
                 source_raw = mapped_row.get("source", "")
+                stage_raw = mapped_row.get("stage", "New")
                 notes_raw = mapped_row.get("notes", "")
                 
                 # 1. Validation & Normalization
@@ -77,6 +78,12 @@ class DataImporter:
                 name = normalize_name(name_raw)
                 phone = phone_raw.strip()
                 source = normalize_source(source_raw)
+                
+                valid_stages = {"New", "Contacted", "Qualified", "Demo", "Enrolled", "Lost"}
+                stage = stage_raw.strip().title()
+                if stage not in valid_stages:
+                    stage = "New"
+                    
                 notes = notes_raw.strip()
                 
                 # 2. In-batch Deduplication
@@ -88,7 +95,7 @@ class DataImporter:
                 seen_phones.add(phone)
                 
                 # 3. Database Insertion
-                lead = Lead(name=name, phone=phone, source=source, notes=notes)
+                lead = Lead(name=name, phone=phone, source=source, stage=LeadStage(stage), notes=notes)
                 try:
                     self.repo.create(lead)
                     imported += 1
