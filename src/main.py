@@ -5,7 +5,7 @@ from sqlalchemy.orm import Session
 from typing import List, Optional
 from src.database import get_db, engine, Base
 from src.models import LeadModel
-from src.schemas import LeadCreate, LeadUpdateStage, LeadResponse, MessageRequest, MessageResponse
+from src.schemas import LeadCreate, LeadUpdateStage, LeadResponse, LeadListResponse, MessageRequest, MessageResponse
 from src.classifier import RuleBasedClassifier
 from sqlalchemy.exc import IntegrityError
 import logging
@@ -1096,7 +1096,7 @@ def get_api_stats(db: Session = Depends(get_db)):
         "stage_distribution": stage_counts
     }
 
-@app.get("/api/v1/leads", response_model=List[LeadResponse])
+@app.get("/api/v1/leads", response_model=LeadListResponse)
 def list_leads(
     stage: Optional[str] = None,
     source: Optional[str] = None,
@@ -1110,9 +1110,10 @@ def list_leads(
     if source:
         query = query.filter(LeadModel.source == source)
     
+    total = query.count()
     offset = (page - 1) * limit
     leads = query.offset(offset).limit(limit).all()
-    return leads
+    return {"items": leads, "total": total}
 
 @app.get("/api/v1/leads/{lead_id}", response_model=LeadResponse)
 def get_lead(lead_id: int, db: Session = Depends(get_db)):

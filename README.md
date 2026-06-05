@@ -30,7 +30,7 @@ graph TD
    cd AcademyOps
    ```
 
-2. **Set up the virtual environment (Requires Python 3.14+)**:
+2. **Set up the virtual environment (Requires Python 3.11+)**:
    - Create a virtual environment:
      ```bash
      python -m venv venv

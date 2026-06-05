@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String, DateTime
-from datetime import datetime
+from datetime import datetime, timezone
 from src.database import Base
 from enum import Enum
 from dataclasses import dataclass
@@ -32,5 +32,5 @@ class LeadModel(Base):
     source = Column(String)
     stage = Column(String, index=True, nullable=False)
     notes = Column(String)
-    created_at = Column(String, default=lambda: datetime.utcnow().isoformat())
-    updated_at = Column(String, default=lambda: datetime.utcnow().isoformat(), onupdate=lambda: datetime.utcnow().isoformat())
+    created_at = Column(String, default=lambda: datetime.now(timezone.utc).isoformat())
+    updated_at = Column(String, default=lambda: datetime.now(timezone.utc).isoformat(), onupdate=lambda: datetime.now(timezone.utc).isoformat())

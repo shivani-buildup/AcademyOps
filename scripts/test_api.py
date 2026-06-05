@@ -1,7 +1,7 @@
 import requests
 import time
 import threading
-from src.api import app
+from src.main import app
 
 def run_server():
     app.run(port=5000, debug=False, use_reloader=False)

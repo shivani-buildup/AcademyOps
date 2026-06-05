@@ -1,0 +1,10 @@
+graph LR
+    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px,color:#000;
+    classDef start fill:#e1f5fe,stroke:#0288d1,color:#000;
+    classDef process fill:#e8f5e9,stroke:#388e3c,color:#000;
+    classDef valid fill:#e0f2f1,stroke:#00796b,color:#000;
+    classDef invalid fill:#ffebee,stroke:#d32f2f,color:#000;
+
+    A[Messy CSV Data]:::start --> B{Sanitization & Regex Check}:::process
+    B -- Valid Lead --> C[(Leads Database)]:::valid
+    B -- Invalid / Duplicate --> D[Quarantine File]:::invalid

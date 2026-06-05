@@ -45,3 +45,35 @@ def test_delete_lead_fastapi(test_client):
 
     get_resp = test_client.get(f"/api/v1/leads/{lead_id}")
     assert get_resp.status_code == 404
+
+def test_create_lead_invalid_payload(test_client):
+    payload = {"phone": "555-0005"}  # Missing name
+    response = test_client.post("/api/v1/leads", json=payload)
+    assert response.status_code == 422
+
+def test_list_pagination(test_client):
+    for i in range(5):
+        test_client.post("/api/v1/leads", json={"name": f"User {i}", "phone": f"555-100{i}"})
+    
+    response = test_client.get("/api/v1/leads?page=1&limit=2")
+    assert response.status_code == 200
+    data = response.json()
+    assert len(data["items"]) == 2
+    assert data["total"] >= 5
+
+def test_list_combined_filters(test_client):
+    test_client.post("/api/v1/leads", json={"name": "Alice Filter", "phone": "555-2001", "source": "LinkedIn"})
+    
+    resp = test_client.post("/api/v1/leads", json={"name": "Bob Filter", "phone": "555-2002", "source": "LinkedIn"})
+    lead_id = resp.json()["id"]
+    test_client.patch(f"/api/v1/leads/{lead_id}/stage", json={"stage": "Contacted"})
+    
+    response = test_client.get("/api/v1/leads?source=LinkedIn&stage=Contacted")
+    assert response.status_code == 200
+    data = response.json()
+    assert len(data["items"]) == 1
+    assert data["items"][0]["name"] == "Bob Filter"
+
+def test_get_nonexistent_404(test_client):
+    response = test_client.get("/api/v1/leads/999999")
+    assert response.status_code == 404

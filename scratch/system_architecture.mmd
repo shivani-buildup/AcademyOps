@@ -1,0 +1,13 @@
+graph TD
+    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px,color:#000;
+    classDef input fill:#e1f5fe,stroke:#0288d1,color:#000;
+    classDef backend fill:#e8f5e9,stroke:#388e3c,color:#000;
+    classDef db fill:#fff3e0,stroke:#f57c00,color:#000;
+    classDef ui fill:#f3e5f5,stroke:#7b1fa2,color:#000;
+
+    A[Raw Marketing Data]:::input --> B(FastAPI REST Backend):::backend
+    M[Student Messages]:::input --> B
+    B <--> C[(SQLite / PostgreSQL)]:::db
+    B <--> D[NLP Intent Classifier]:::backend
+    C --> E[Streamlit Dashboard]:::ui
+    E --> F[Funnel & KPI Analytics]:::ui
